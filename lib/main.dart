@@ -12,7 +12,7 @@ Future<void> main() async {
     try {
       await Firebase.initializeApp(options: AppConfig.firebaseOptions);
       if (!kIsWeb) {
-        await FirebaseDatabase.instance.setPersistenceEnabled(false);
+        FirebaseDatabase.instance.setPersistenceEnabled(false);
       }
     } catch (_) {
       setupError = 'Firebase could not start. Check AppConfig and your internet connection.';
