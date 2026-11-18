@@ -1,0 +1,14 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+build/
+*.iml
+android/.gradle/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+.env
+__pycache__/
+*.pyc
